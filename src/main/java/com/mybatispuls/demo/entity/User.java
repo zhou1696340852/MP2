@@ -15,4 +15,8 @@ public class User {
     private String name;
     private Integer age;
     private String email;
+    @TableField(fill = FieldFill.INSERT)
+    private Date creationTime;
+    @TableField(fill = FieldFill.INSERT_UPDATE)
+    private Date updateTime;
 }
