@@ -19,4 +19,8 @@ public class User {
     private Date creationTime;
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
+    @Version
+    //填充默认值
+    @TableField(fill = FieldFill.INSERT)
+    private Integer  version;
 }

@@ -17,6 +17,8 @@ public class MyMeteObjectHandler implements MetaObjectHandler {
     public void insertFill(MetaObject metaObject) {
         this.setFieldValByName("creationTime", new Date(), metaObject);
         this.setFieldValByName("updateTime", new Date(), metaObject);
+        //版本默认填充1
+        this.setFieldValByName("version", 1, metaObject);
     }
 
     @Override
